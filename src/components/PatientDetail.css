@@ -1,0 +1,169 @@
+.pd-root {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pd-chart-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
+.pd-chart-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pd-chart-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #072635;
+}
+
+.pd-pill {
+    margin-left: auto;
+    background: #06b6d41a;
+    color: #06b6d4;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.pd-chart-area {
+    height: 300px;
+    margin-top: 12px;
+}
+
+/* Vitals */
+.pd-vitals {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.pd-vital {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.pd-vital-title {
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.pd-vital-value {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #072635;
+}
+
+.pd-vital-sub {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* Diagnostics & Labs */
+.pd-lists {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.pd-diagnostics,
+.pd-lab {
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+    flex: 1;
+    min-height: 160px;
+}
+
+.pd-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pd-table th,
+.pd-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 13px;
+    color: #072635;
+}
+
+.pd-table thead th {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* Lab list */
+.pd-lab-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pd-lab-list li {
+    padding: 8px 6px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #072635;
+}
+
+.pd-info-section {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pd-info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.pd-info-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #072635;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pd-info-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.pd-info-value {
+  margin-left: 26px; /* align nicely under label text */
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* Scrollbar style */
+.lab-results-wrap::-webkit-scrollbar {
+  width: 6px;
+}
+.lab-results-wrap::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.lab-results-wrap::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
