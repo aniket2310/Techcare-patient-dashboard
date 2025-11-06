@@ -1,16 +1,21 @@
-# React + Vite
+# Tech.Care — Patient Dashboard (FED Skills Test)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to run (dev)
+1. npm install
+2. npm run dev
+3. Open http://localhost:5173
 
-Currently, two official plugins are available:
+## How to build (production)
+1. npm run build
+2. Serve `dist/` (serve -s dist) or open `dist/index.html`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## API
+- Endpoint: https://fedskillstest.coalitiontechnologies.workers.dev
+- Auth: Basic auth (coalition:skills-test)
+- Implementation: The app calls `btoa('coalition:skills-test')` at runtime to create the Authorization header.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notes
+- The UI displays **Jessica Taylor** by default as required.
+- Chart used: Chart.js (react-chartjs-2)
+- Files included: `src/` (source), `dist/` (build), `assets/`, `package.json`, `README.md`
+- No code from other people was used; icons are project assets or simple SVGs.
